@@ -1,0 +1,31 @@
+<form method="POST" action="/">
+  <input type="text" name="username" value="{_.username}">
+  <input type="password" name="password" value="">
+  <input type="submit">
+</form>
+
+<form method="POST" action="/">
+  <input type="checkbox" name="toggle" value="checked" {_.toggle}>
+  <input type="hidden" name="_delete" value="toggle">
+  <input type="submit">
+</form>
+
+<form method="POST" action="/">
+  <input type="checkbox" name="toggles_0" value="checked" {_.toggles_0}>
+  <input type="hidden" name="_delete[0]" value="toggles_0">
+  <input type="checkbox" name="toggles_1" value="checked" {_.toggles_1}>
+  <input type="hidden" name="_delete[1]" value="toggles_1">
+  <input type="checkbox" name="toggles_2" value="checked" {_.toggles_2}>
+  <input type="hidden" name="_delete[2]" value="toggles_2">
+  <input type="submit">
+</form>
+
+<form method="POST" action="/">
+  <input type="hidden" name="_delete" value="optionalDescription">
+  <textarea name="optionalDescription">{_.optionalDescription}</textarea>
+  <input type="submit">
+</form>
+
+<pre>
+{_.json}
+</pre>

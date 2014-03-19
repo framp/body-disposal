@@ -1,0 +1,10 @@
+{
+  "name": "body-disposal"
+, "author": "Federico Rampazzo <frampone@gmail.com> (http://framp.me)"
+, "version": "0.0.1"
+, "description": "Connect middleware to clean empty fields and delete those specified in _delete"
+, "repository" : {
+    "type" : "git"
+  , "url" : "http://github.com/framp/body-disposal.git"
+  }
+}
