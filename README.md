@@ -12,11 +12,11 @@ If you're using the default configuration (do it):
  - Every deleted field whose name is contained in the `req.body._delete` array (or is `req.body._delete`) will be set to undefined.
 
  
- You just need to add it to your middlewares (after req.body has been set):
+You just need to add it to your middlewares (after req.body has been set):
  
     connect.use(bodyDisposal())
     
- If you really want to change something (at your own risk):
+If you really want to change something (at your own risk):
  
     connect.use(
       bodyDisposal('_delete', 
